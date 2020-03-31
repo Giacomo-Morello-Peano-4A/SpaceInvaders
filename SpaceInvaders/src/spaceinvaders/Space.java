@@ -15,7 +15,7 @@ import java.awt.Color;
 public class Space extends Canvas{
 
     public Space() {
-       System.out.println("Setting...");
+       System.out.println("Impostando lo sfondo...");
        setBackground (Color.BLACK);
        setSize(800, 500);
     }
