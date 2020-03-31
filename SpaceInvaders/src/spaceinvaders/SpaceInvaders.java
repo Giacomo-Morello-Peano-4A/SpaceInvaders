@@ -12,9 +12,9 @@ import javax.swing.WindowConstants;
  *
  * @author Lenovo
  */
-public class SpaceInvaders extends JFrame {
+public class SpaceInvaders extends JFrame{
 
-    public SpaceInvaders() {
+    public SpaceInvaders() throws InterruptedException{
         this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         Intro intro = new Intro();
         this.add(intro);
@@ -26,7 +26,7 @@ public class SpaceInvaders extends JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         new SpaceInvaders();
     }
 

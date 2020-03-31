@@ -15,17 +15,27 @@ import java.awt.Graphics;
  */
 public class Intro extends Space {
 
+    private int i = 0;
+
+    void run() throws InterruptedException {
+        setBackground(Color.BLACK);
+        setSize(800, 500);
+
+        for (i = 100; i >= 10; i -= 1) {
+            System.out.println("i: " + i);
+            this.repaint();
+            Thread.sleep(20);
+        }
+
+    }
+
     @Override
     public void paint(Graphics g) {
         g.setColor(Color.green);
-        g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 40));
-        g.drawString("Space Invaders", 100, 100);
-        g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 10));
-        g.drawString("          by Giacomo Morello", 110, 110);
-    }
-
-    void run() {
-        this.repaint();
+        g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 40+i));
+        g.drawString("Space Invaders", 100+i, 100+i);
+        g.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 10+i));
+        g.drawString("          by Giacomo Morello", 110+i+i, 110+i+i);
     }
 
 }

@@ -12,12 +12,12 @@ import java.awt.Color;
  *
  * @author Lenovo
  */
-public class Space extends Canvas {
+public class Space extends Canvas{
 
     public Space() {
-        System.out.println("Settings...");
-        setBackground(Color.BLACK);
-        setSize(800, 500);
+       System.out.println("Setting...");
+       setBackground (Color.BLACK);
+       setSize(800, 500);
     }
 
 }
